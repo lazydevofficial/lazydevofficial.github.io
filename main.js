@@ -18,7 +18,7 @@ module.exports = "\r\n<router-outlet></router-outlet>\r\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<footer class=\"footer \">\r\n    <div class=\"container-fluid\">\r\n        <nav class=\"pull-left\">\r\n            <ul>\r\n                <li>\r\n                    <a href=\"https://www.linkedin.com/in/augusto-mesquita-945952b0/\" target=\"_blank\">\r\n                        Linkedin\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://medium.com/@augustomesquita\" target=\"_blank\">\r\n                        Medium\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://www.instagram.com/augustomesquitasrs\" target=\"_blank\">\r\n                        Instagram\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://www.facebook.com/augustomesquitaofficial\" target=\"_blank\">\r\n                        Facebook\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://github.com/Augustomesquita\" target=\"_blank\">\r\n                        Github\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n        <div class=\"copyright pull-right\">\r\n            &copy;\r\n            {{test | date: 'yyyy'}}, feito com motivação e muito café por\r\n            <a href=\"https://www.instagram.com/augustomesquitasrs\" target=\"_blank\">Augusto Mesquita</a>.\r\n        </div>\r\n    </div>\r\n</footer>"
+module.exports = "<footer class=\"footer \">\r\n    <div class=\"container-fluid\">\r\n        <nav class=\"pull-left\">\r\n            <ul>\r\n                <li>\r\n                    <a href=\"https://www.instagram.com/lazydeveofficial\" target=\"_blank\">\r\n                        Instagram\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://www.facebook.com/lazydevofficial\" target=\"_blank\">\r\n                        Facebook\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://github.com/lazydevofficial\" target=\"_blank\">\r\n                        Medium\r\n                    </a>\r\n                </li>\r\n                <li>\r\n                    <a href=\"https://medium.com/lazydevofficial\" target=\"_blank\">\r\n                        Github\r\n                    </a>\r\n                </li>\r\n            </ul>\r\n        </nav>\r\n        <div class=\"copyright pull-right\">\r\n            &copy;\r\n            {{test | date: 'yyyy'}}, feito com motivação e muito café por\r\n            <a href=\"https://www.instagram.com/augustomesquitasrs\" target=\"_blank\">Augusto Mesquita</a>.\r\n        </div>\r\n    </div>\r\n</footer>"
 
 /***/ }),
 
@@ -29,7 +29,7 @@ module.exports = "<footer class=\"footer \">\r\n    <div class=\"container-fluid
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-wrapper\">\r\n          <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\r\n        </div>\r\n        <button mat-raised-button class=\"navbar-toggler\" type=\"button\" (click)=\"sidebarToggle()\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse justify-content-end\" id=\"navigation\">\r\n            <ul class=\"navbar-nav\">\r\n                <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        <i class=\"material-icons\">notifications</i>\r\n                        <span class=\"notification\">1</span>\r\n                        <p>\r\n                            <span class=\"d-lg-none d-md-block\">Notificações</span>\r\n                        </p>\r\n                    </a>\r\n                    <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/contact\">Ótimo DEV encontrado!</a>\r\n                    </div>\r\n                </li>\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-transparent  navbar-absolute fixed-top\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"navbar-wrapper\">\r\n          <a class=\"navbar-brand\" href=\"javascript:void(0)\">{{getTitle()}}</a>\r\n        </div>\r\n        <button mat-raised-button class=\"navbar-toggler\" type=\"button\" (click)=\"sidebarToggle()\">\r\n            <span class=\"sr-only\">Toggle navigation</span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n            <span class=\"navbar-toggler-icon icon-bar\"></span>\r\n        </button>\r\n        <div class=\"collapse navbar-collapse justify-content-end\" id=\"navigation\">\r\n            <ul class=\"navbar-nav\">\r\n                <!-- <li class=\"nav-item dropdown\">\r\n                    <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\" aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                        <i class=\"material-icons\">notifications</i>\r\n                        <span class=\"notification\">1</span>\r\n                        <p>\r\n                            <span class=\"d-lg-none d-md-block\">Notificações</span>\r\n                        </p>\r\n                    </a>\r\n                    <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                        <a class=\"dropdown-item\" routerLink=\"/contact\">Ótimo DEV encontrado!</a>\r\n                    </div>\r\n                </li> -->\r\n            </ul>\r\n        </div>\r\n    </div>\r\n</nav>\r\n"
 
 /***/ }),
 
@@ -40,7 +40,7 @@ module.exports = "<nav class=\"navbar navbar-expand-lg navbar-transparent  navba
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"logo\">\r\n    <a routerLink=\"/contact\" class=\"simple-text\">\r\n        <div class=\"logo-img\">\r\n            <img src=\"/assets/img/angular2-logo-red.png\" />\r\n        </div>\r\n        XX ugusto Mesquita\r\n    </a>\r\n</div>\r\n<div class=\"sidebar-wrapper\">\r\n    <div *ngIf=\"isMobileMenu()\">\r\n        <ul class=\"nav navbar-nav nav-mobile-menu\">\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\"\r\n                    aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                    <i class=\"material-icons\">notifications</i>\r\n                    <span class=\"notification\">1</span>\r\n                    <p>\r\n                        <span class=\"d-lg-none d-md-block\">Notificações</span>\r\n                    </p>\r\n                </a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                    <a class=\"dropdown-item\" routerLink=\"/contact\">Ótimo DEV encontrado!</a>\r\n                </div>\r\n            </li>\r\n        </ul>\r\n    </div>\r\n    <ul class=\"nav\">\r\n        <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}} nav-item\">\r\n            <a class=\"nav-link\" [routerLink]=\"[menuItem.path]\">\r\n                <i class=\"material-icons\">{{menuItem.icon}}</i>\r\n                <p><b>{{menuItem.title}}</b></p>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>"
+module.exports = "<div class=\"logo\">\r\n    <a routerLink=\"/\" class=\"simple-text\">\r\n        Bem vindo à LazyDev\r\n    </a>\r\n</div>\r\n<div class=\"sidebar-wrapper\">\r\n    <div *ngIf=\"isMobileMenu()\">\r\n        <!-- <ul class=\"nav navbar-nav nav-mobile-menu\">\r\n            <li class=\"nav-item dropdown\">\r\n                <a class=\"nav-link\" href=\"javascript:void(0)\" id=\"navbarDropdownMenuLink\" data-toggle=\"dropdown\"\r\n                    aria-haspopup=\"true\" aria-expanded=\"false\">\r\n                    <i class=\"material-icons\">notifications</i>\r\n                    <span class=\"notification\">1</span>\r\n                    <p>\r\n                        <span class=\"d-lg-none d-md-block\">Notificações</span>\r\n                    </p>\r\n                </a>\r\n                <div class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"navbarDropdownMenuLink\">\r\n                    <a class=\"dropdown-item\" routerLink=\"/contact\">Ótimo DEV encontrado!</a>\r\n                </div>\r\n            </li>\r\n        </ul> -->\r\n    </div>\r\n    <ul class=\"nav\">\r\n        <li routerLinkActive=\"active\" *ngFor=\"let menuItem of menuItems\" class=\"{{menuItem.class}} nav-item\">\r\n            <a class=\"nav-link\" [routerLink]=\"[menuItem.path]\">\r\n                <i class=\"material-icons\">{{menuItem.icon}}</i>\r\n                <p><b>{{menuItem.title}}</b></p>\r\n            </a>\r\n        </li>\r\n    </ul>\r\n</div>"
 
 /***/ }),
 
@@ -228,7 +228,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var routes = [
     {
         path: '',
-        redirectTo: 'contact',
+        redirectTo: 'cursos',
         pathMatch: 'full',
     }, {
         path: '',
@@ -559,10 +559,10 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 var ROUTES = [
-    { path: '/contact', title: "It's-a Me, Augusto!", icon: 'insert_emoticon', class: '' },
-    { path: '/projects', title: 'Experiências', icon: 'business_center', class: '' },
+    { path: '/cursos', title: 'Cursos', icon: 'school', class: '' },
     { path: '/blog', title: 'Artigos', icon: 'import_contacts', class: '' },
-    { path: '/knowledge-list', title: 'Skills', icon: 'school', class: '' },
+    { path: '/oportunidades', title: 'Oportunidades', icon: 'business_center', class: '' },
+    { path: '/sobre', title: "Sobre", icon: 'insert_emoticon', class: '' },
 ];
 var SidebarComponent = /** @class */ (function () {
     function SidebarComponent() {
@@ -847,7 +847,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\MeusDocumentos\Projetos\portfolio\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\MeusDocumentos\Projetos\lazydev\src\main.ts */"./src/main.ts");
 
 
 /***/ })

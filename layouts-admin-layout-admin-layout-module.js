@@ -65159,7 +65159,7 @@ var NgxSpinnerModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n\r\n      <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n        <b style=\"color: #ec3428; font-weight: 900\" > Estou pensando... </b>\r\n      </ngx-spinner>\r\n\r\n      <ng-container *ngFor=\"let post of blogPosts\">\r\n        <div class=\"col-lg-4 col-md-6 col-sm-6\"  *ngIf=\"post.title != 'Contato'\">\r\n          <a href=\"{{post.link}}\" target=\"_blank\">\r\n\r\n            <div class=\"card card-stats box effect-hide\" [class.effect-show]=\"post.showContent\">\r\n              <div class=\"card-header card-header-text text-center\" style=\"margin-top:5%\">\r\n                <img class=\"img img-responsive\" src=\"{{post.thumbnail}}\" style=\"max-width: 75%\" />\r\n              </div>\r\n              <div class=\"card-body m-card-body-size text-center\">\r\n                <h4 class=\"card-title\"><b>{{post.title}}</b></h4>\r\n              </div>\r\n            </div>\r\n          </a>\r\n        </div>\r\n      </ng-container>\r\n\r\n    </div>\r\n  </div>"
+module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n\r\n      <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n        <b style=\"color: #ec3428; font-weight: 900\"> Estou pensando... </b>\r\n      </ngx-spinner>\r\n\r\n      <ng-container *ngFor=\"let post of blogPosts\">\r\n        <div class=\"col-lg-4 col-md-6 col-sm-6 effect-hide\" *ngIf=\"post.title != 'Contato'\"\r\n          [class.effect-show]=\"post.showContent\">\r\n          <a href=\"{{post.link}}\" target=\"_blank\">\r\n\r\n            <div class=\"card card-stats box \">\r\n              <div class=\"card-header card-header-text text-center\" style=\"margin-top:5%\">\r\n                <img class=\"img img-responsive\" src=\"{{post.thumbnail}}\" style=\"max-width: 75%\" />\r\n              </div>\r\n              <div class=\"card-body m-card-body-size text-center\">\r\n                <h4 class=\"card-title\"><b>{{post.title}}</b></h4>\r\n              </div>\r\n            </div>\r\n          </a>\r\n        </div>\r\n      </ng-container>\r\n\r\n    </div>\r\n  </div>"
 
 /***/ }),
 
@@ -65170,7 +65170,7 @@ module.exports = "<div class=\"main-content\">\r\n  <div class=\"container-fluid
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n            <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n                <b style=\"color: #ec3428; font-weight: 900\" > Estou pensando... </b>\r\n            </ngx-spinner>\r\n\r\n            <div class=\"col-lg-4 col-md-6 col-sm-6 effect-hide\" [class.effect-show]=\"experiance.showContent\" *ngFor=\"let experiance of experiances\">\r\n                <a href=\"{{experiance.link}}\" target=\"_blank\">\r\n                    <div class=\"card card-stats box\">\r\n                        <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(experiance)\" >\r\n                            <img class=\"img\" src=\"{{experiance.imgUrl}}\" [ngStyle]=\"customMaxWidth(experiance)\" />\r\n                        </div>\r\n                        <div class=\"card-body m-card-body-size text-center\">\r\n                            <h4 class=\"card-title\"><b>{{experiance.title}}</b></h4>\r\n                            <div class=\"card-category\">\r\n                                <div><b>{{experiance.subtitle}}</b></div>\r\n                                <div class=\"m-margin-top\">{{experiance.content}}</div>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n                </a>\r\n            </div>\r\n\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n            <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n                <b style=\"color: #ec3428; font-weight: 900\" > Estou pensando... </b>\r\n            </ngx-spinner>\r\n\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12 text-center\" *ngIf=\"!partnersCourses && !lazyCourses\">\r\n                    <div class=\"card\">\r\n                        <div class=\"card-header card-header-warning\">\r\n                            <h4 class=\"card-title \">Nenhum curso disponível no momento</h4>\r\n                        </div>\r\n                        <div class=\"card-body\">\r\n                            \r\n                        </div>\r\n                </div>\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"lazyCourses\" >\r\n                    <h2>Cursos LazyDev</h2>\r\n                </div>\r\n\r\n                <div class=\"col-lg-4 col-md-6 col-sm-6 effect-hide\" [class.effect-show]=\"course.showContent\" *ngFor=\"let course of lazyCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"partnersCourses\">\r\n                    <h2>Cursos de Parceiros</h2>\r\n                </div>\r\n                \r\n                <div class=\"col-lg-4 col-md-6 col-sm-6 effect-hide\" [class.effect-show]=\"course.showContent\" *ngFor=\"let course of partnersCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n        \r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -65181,7 +65181,7 @@ module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-flu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n            <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n                <b style=\"color: #ec3428; font-weight: 900\" > Estou pensando... </b>\r\n            </ngx-spinner>\r\n\r\n            <!-- Lista de linguagens de programação -->\r\n            <div class=\"col-md-6  effect-hide\" [class.effect-show]=\"showProgramLanguageContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-success\">\r\n                        <h4 class=\"card-title \">Linguagens</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeProgramLanguageList\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- ###Lista de linguagens de programação -->\r\n\r\n            <!-- Lista de Ferramentas -->\r\n            <div class=\"col-md-6 effect-hide\" [class.effect-show]=\"showToolContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title \">Frameworks</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeProgramToolList\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- ###Lista de linguagens de programação -->\r\n\r\n            <!-- Lista de Idiomas -->\r\n            <div class=\"col-md-6 effect-hide\" [class.effect-show]=\"showLanguageContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-info\">\r\n                        <h4 class=\"card-title \">Idiomas</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeLanguages\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- ###Lista de Idiomas -->\r\n\r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n            <ngx-spinner name=\"sp1\" type=\"ball-climbing-dot\" color=\"#ec3428\" bdColor=\"#EEEEEE\" [fullScreen]=\"true\">\r\n                <b style=\"color: #ec3428; font-weight: 900\" > Estou pensando... </b>\r\n            </ngx-spinner>\r\n\r\n            <!-- Lista de linguagens de programação -->\r\n            <div class=\"col-md-12  effect-hide\" [class.effect-show]=\"showProgramLanguageContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title \">Nenhuma oportunidade disponível no momento</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <!-- <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeProgramLanguageList\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div> -->\r\n                    </div>\r\n                </div>\r\n            </div>\r\n            <!-- ###Lista de linguagens de programação -->\r\n\r\n            <!-- Lista de Ferramentas -->\r\n            <!-- <div class=\"col-md-6 effect-hide\" [class.effect-show]=\"showToolContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-warning\">\r\n                        <h4 class=\"card-title \">Frameworks</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeProgramToolList\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div> -->\r\n            <!-- ###Lista de linguagens de programação -->\r\n\r\n            <!-- Lista de Idiomas -->\r\n            <!-- <div class=\"col-md-6 effect-hide\" [class.effect-show]=\"showLanguageContent\">\r\n                <div class=\"card\">\r\n                    <div class=\"card-header card-header-info\">\r\n                        <h4 class=\"card-title \">Idiomas</h4>\r\n                    </div>\r\n                    <div class=\"card-body\">\r\n                        <div class=\"table-responsive\">\r\n                            <table class=\"table\">\r\n                                <thead class=\"\">\r\n                                    <th class=\"text-center\">\r\n                                        Nome\r\n                                    </th>\r\n                                    <th class=\"text-center\">\r\n                                        Nível (1 a 5)\r\n                                    </th>\r\n                                </thead>\r\n                                <tbody>\r\n                                    <tr *ngFor=\"let data of knowledgeLanguages\">\r\n                                        <td class=\"text-center\">\r\n                                            {{data.name}}\r\n                                        </td>\r\n                                        <td class=\"text-center\">\r\n                                            {{data.level}}\r\n                                        </td>\r\n                                    </tr>\r\n                                </tbody>\r\n                            </table>\r\n                        </div>\r\n                    </div>\r\n                </div>\r\n            </div> -->\r\n            <!-- ###Lista de Idiomas -->\r\n\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -65192,7 +65192,7 @@ module.exports = "<div class=\"main-content\">\r\n    <div class=\"container-flu
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content animated fadeIn\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"card card-profile\">\r\n          <div class=\"card-avatar\">\r\n            <a href=\"javascript:void(0)\">\r\n              <img class=\"img\" src=\"./assets/img/faces/augusto.jpeg\" />\r\n            </a>\r\n          </div>\r\n          <div class=\"card-body\">\r\n            <h6 class=\"card-category text-gray\">\r\n              Desenvolvedor na Leucotron / Escritor na LazyDev\r\n            </h6>\r\n            <h4 class=\"card-title\">Augusto Mesquita</h4>\r\n            <p class=\"card-description\">\r\n              Sou um simples amante da programação e fã de videogame que\r\n              possui o costume de transformar café em código! Trabalho com\r\n              desenvolvimento de front-end e back-end e nas horas vagas arranho como escritor da LazyDev pela plataforma\r\n              Medium. Você pode me acompanhar ou entrar em contato através das redes sociais.\r\n            </p>\r\n            <a href=\"https://www.linkedin.com/in/augusto-mesquita-945952b0/\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><span class=\"fa fa-linkedin\"></span></a>\r\n            <a href=\"https://medium.com/lazydevofficial\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\"\r\n              title=\"Medium\"><span class=\"fa fa-medium\"></span></a>\r\n            <a href=\"https://www.instagram.com/augustomesquitasrs/\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Instagram\"><span class=\"fa fa-instagram\"></span></a>\r\n            <a href=\"https://www.facebook.com/augustomesquitaofficial\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Facebook\"><span class=\"fa fa-facebook\"></span></a>\r\n            <a href=\"https://github.com/Augustomesquita\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\"\r\n              title=\"Github\"><span class=\"fa fa-github\"></span></a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n\r\n  </div>\r\n</div>"
+module.exports = "<div class=\"main-content animated fadeIn\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"card card-profile\">\r\n          <div class=\"card-avatar\">\r\n            <a href=\"javascript:void(0)\">\r\n              <img class=\"img\" src=\"./assets/img/faces/augusto.jpeg\" />\r\n            </a>\r\n          </div>\r\n          <div class=\"card-body\">\r\n            <h6 class=\"card-category text-red\">\r\n              <b>Desenvolvedor de Software / Criador da LazyDev</b>\r\n            </h6>\r\n            <h4 class=\"card-title text-red\"><b>Augusto Mesquita</b></h4>\r\n            <p class=\"card-description\">\r\n              Sou um simples amante da programação e fã de videogame que possui o costume de transformar café em código! Trabalho com desenvolvimento há quase 10 anos e após um tempo quis contribuir\r\n              com a comunidade de desenvolvimento de forma mais efetiva, foi quando comecei com a <b>LazyDev</b> no instagram (<b>@lazydevofficial</b>) e posteriormente também criei esse site, para\r\n              conseguir espalhar o conhecimento de maneira mais fácil.\r\n            </p>\r\n            <a href=\"https://www.linkedin.com/in/augusto-mesquita-945952b0/\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><span class=\"fa fa-linkedin\"></span></a>\r\n            <a href=\"https://medium.com/lazydevofficial\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\"\r\n              title=\"Medium\"><span class=\"fa fa-medium\"></span></a>\r\n            <a href=\"https://www.instagram.com/augustomesquitasrs/\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Instagram\"><span class=\"fa fa-instagram\"></span></a>\r\n            <a href=\"https://www.facebook.com/augustomesquitaofficial\" target=\"_blank\"\r\n              class=\"btn btn-danger btn-fill btn-round\" title=\"Facebook\"><span class=\"fa fa-facebook\"></span></a>\r\n            <a href=\"https://github.com/Augustomesquita\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\"\r\n              title=\"Github\"><span class=\"fa fa-github\"></span></a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
 
 /***/ }),
 
@@ -65203,7 +65203,7 @@ module.exports = "<div class=\"main-content animated fadeIn\">\r\n  <div class=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".m-card-body-size {\r\n  min-height: 95px;\r\n  max-height: 95px;\r\n}\r\n\r\n.box:hover {\r\n  transition-property: box-shadow margin-top;\r\n  transition-duration: 0.2s;\r\n  margin-top: 17px;\r\n  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.effect-show {\r\n  opacity: 1 !important;\r\n  transition: opacity .50 ease-in-out;\r\n  -moz-transition: opacity .50s ease-in-out;\r\n  -webkit-transition: opacity .50s ease-in-out;\r\n}\r\n\r\n.effect-hide {\r\n  opacity: 0;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmxvZy9ibG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0UsMENBQTBDO0VBQzFDLHlCQUF5QjtFQUN6QixnQkFBZ0I7RUFDaEIsd0NBQXdDO0FBQzFDOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLG1DQUFtQztFQUNuQyx5Q0FBeUM7RUFDekMsNENBQTRDO0FBQzlDOztBQUVBO0VBQ0UsVUFBVTtBQUNaIiwiZmlsZSI6InNyYy9hcHAvYmxvZy9ibG9nLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubS1jYXJkLWJvZHktc2l6ZSB7XHJcbiAgbWluLWhlaWdodDogOTVweDtcclxuICBtYXgtaGVpZ2h0OiA5NXB4O1xyXG59XHJcblxyXG4uYm94OmhvdmVyIHtcclxuICB0cmFuc2l0aW9uLXByb3BlcnR5OiBib3gtc2hhZG93IG1hcmdpbi10b3A7XHJcbiAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC4ycztcclxuICBtYXJnaW4tdG9wOiAxN3B4O1xyXG4gIGJveC1zaGFkb3c6IDAgOHB4IDhweCByZ2JhKDAsIDAsIDAsIDAuMSk7XHJcbn1cclxuXHJcbi5lZmZlY3Qtc2hvdyB7XHJcbiAgb3BhY2l0eTogMSAhaW1wb3J0YW50O1xyXG4gIHRyYW5zaXRpb246IG9wYWNpdHkgLjUwIGVhc2UtaW4tb3V0O1xyXG4gIC1tb3otdHJhbnNpdGlvbjogb3BhY2l0eSAuNTBzIGVhc2UtaW4tb3V0O1xyXG4gIC13ZWJraXQtdHJhbnNpdGlvbjogb3BhY2l0eSAuNTBzIGVhc2UtaW4tb3V0O1xyXG59XHJcblxyXG4uZWZmZWN0LWhpZGUge1xyXG4gIG9wYWNpdHk6IDA7XHJcbn1cclxuIl19 */"
+module.exports = ".m-card-body-size {\r\n    min-height: 95px;\r\n    max-height: 95px;\r\n}\r\n\r\n.box:hover {\r\n    transition-property: box-shadow transform;\r\n    transition-duration: 0.3s;\r\n    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);\r\n    -webkit-transform: translateY(-5%);\r\n            transform: translateY(-5%);\r\n}\r\n\r\n.effect-show {\r\n    opacity: 1 !important;\r\n    transition: opacity 0.5 ease-in-out;\r\n    -moz-transition: opacity 0.5s ease-in-out;\r\n    -webkit-transition: opacity 0.5s ease-in-out;\r\n}\r\n\r\n.effect-hide {\r\n    opacity: 0;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYmxvZy9ibG9nLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7SUFDSSxnQkFBZ0I7SUFDaEIsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0kseUNBQXlDO0lBQ3pDLHlCQUF5QjtJQUN6Qix3Q0FBd0M7SUFDeEMsa0NBQTBCO1lBQTFCLDBCQUEwQjtBQUM5Qjs7QUFFQTtJQUNJLHFCQUFxQjtJQUNyQixtQ0FBbUM7SUFDbkMseUNBQXlDO0lBQ3pDLDRDQUE0QztBQUNoRDs7QUFFQTtJQUNJLFVBQVU7QUFDZCIsImZpbGUiOiJzcmMvYXBwL2Jsb2cvYmxvZy5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLm0tY2FyZC1ib2R5LXNpemUge1xyXG4gICAgbWluLWhlaWdodDogOTVweDtcclxuICAgIG1heC1oZWlnaHQ6IDk1cHg7XHJcbn1cclxuXHJcbi5ib3g6aG92ZXIge1xyXG4gICAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogYm94LXNoYWRvdyB0cmFuc2Zvcm07XHJcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xyXG4gICAgYm94LXNoYWRvdzogMCA4cHggOHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNSUpO1xyXG59XHJcblxyXG4uZWZmZWN0LXNob3cge1xyXG4gICAgb3BhY2l0eTogMSAhaW1wb3J0YW50O1xyXG4gICAgdHJhbnNpdGlvbjogb3BhY2l0eSAwLjUgZWFzZS1pbi1vdXQ7XHJcbiAgICAtbW96LXRyYW5zaXRpb246IG9wYWNpdHkgMC41cyBlYXNlLWluLW91dDtcclxuICAgIC13ZWJraXQtdHJhbnNpdGlvbjogb3BhY2l0eSAwLjVzIGVhc2UtaW4tb3V0O1xyXG59XHJcblxyXG4uZWZmZWN0LWhpZGUge1xyXG4gICAgb3BhY2l0eTogMDtcclxufSJdfQ== */"
 
 /***/ }),
 
@@ -65275,7 +65275,7 @@ var BlogComponent = /** @class */ (function () {
         this.spinner.hide('sp1');
         var auxTime = 1;
         this.blogPosts.filter(function (post) { return post.title != "Contato"; }).forEach(function (post) {
-            setTimeout(function () { return post.showContent = true; }, auxTime * 800);
+            setTimeout(function () { return post.showContent = true; }, auxTime * 100);
             auxTime++;
         });
     };
@@ -65301,7 +65301,7 @@ var BlogComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".m-card-body-size {\r\n  min-height: 210px;\r\n  max-height: 210px;\r\n}\r\n\r\n.box:hover {\r\n  transition-property: box-shadow margin-top;\r\n  transition-duration: 0.2s;\r\n  margin-top: 17px;\r\n  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.m-margin-top {\r\n  margin-top: 15px;\r\n}\r\n\r\n.effect-show {\r\n  opacity: 1 !important;\r\n  transition: opacity 0.5 ease-in-out;\r\n  -moz-transition: opacity 0.5s ease-in-out;\r\n  -webkit-transition: opacity 0.5s ease-in-out;\r\n}\r\n\r\n.effect-hide {\r\n  opacity: 0;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsaUJBQWlCO0VBQ2pCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLDBDQUEwQztFQUMxQyx5QkFBeUI7RUFDekIsZ0JBQWdCO0VBQ2hCLHdDQUF3QztBQUMxQzs7QUFFQTtFQUNFLGdCQUFnQjtBQUNsQjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixtQ0FBbUM7RUFDbkMseUNBQXlDO0VBQ3pDLDRDQUE0QztBQUM5Qzs7QUFFQTtFQUNFLFVBQVU7QUFDWiIsImZpbGUiOiJzcmMvYXBwL2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tLWNhcmQtYm9keS1zaXplIHtcclxuICBtaW4taGVpZ2h0OiAyMTBweDtcclxuICBtYXgtaGVpZ2h0OiAyMTBweDtcclxufVxyXG5cclxuLmJveDpob3ZlciB7XHJcbiAgdHJhbnNpdGlvbi1wcm9wZXJ0eTogYm94LXNoYWRvdyBtYXJnaW4tdG9wO1xyXG4gIHRyYW5zaXRpb24tZHVyYXRpb246IDAuMnM7XHJcbiAgbWFyZ2luLXRvcDogMTdweDtcclxuICBib3gtc2hhZG93OiAwIDhweCA4cHggcmdiYSgwLCAwLCAwLCAwLjEpO1xyXG59XHJcblxyXG4ubS1tYXJnaW4tdG9wIHtcclxuICBtYXJnaW4tdG9wOiAxNXB4O1xyXG59XHJcblxyXG4uZWZmZWN0LXNob3cge1xyXG4gIG9wYWNpdHk6IDEgIWltcG9ydGFudDtcclxuICB0cmFuc2l0aW9uOiBvcGFjaXR5IDAuNSBlYXNlLWluLW91dDtcclxuICAtbW96LXRyYW5zaXRpb246IG9wYWNpdHkgMC41cyBlYXNlLWluLW91dDtcclxuICAtd2Via2l0LXRyYW5zaXRpb246IG9wYWNpdHkgMC41cyBlYXNlLWluLW91dDtcclxufVxyXG5cclxuLmVmZmVjdC1oaWRlIHtcclxuICBvcGFjaXR5OiAwO1xyXG59XHJcbiJdfQ== */"
+module.exports = ".m-card-body-size {\r\n    min-height: 210px;\r\n    max-height: 210px;\r\n}\r\n\r\n.box:hover {\r\n    transition-property: box-shadow transform;\r\n    transition-duration: 0.3s;\r\n    -webkit-transform: translateY(-5%);\r\n            transform: translateY(-5%);\r\n    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n.effect-show {\r\n    opacity: 1 !important;\r\n    transition: opacity 0.5 ease-in-out;\r\n    -moz-transition: opacity 0.5s ease-in-out;\r\n    -webkit-transition: opacity 0.5s ease-in-out;\r\n}\r\n\r\n.effect-hide {\r\n    opacity: 0;\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksaUJBQWlCO0lBQ2pCLGlCQUFpQjtBQUNyQjs7QUFFQTtJQUNJLHlDQUF5QztJQUN6Qyx5QkFBeUI7SUFDekIsa0NBQTBCO1lBQTFCLDBCQUEwQjtJQUMxQix3Q0FBd0M7QUFDNUM7O0FBRUE7SUFDSSxxQkFBcUI7SUFDckIsbUNBQW1DO0lBQ25DLHlDQUF5QztJQUN6Qyw0Q0FBNEM7QUFDaEQ7O0FBRUE7SUFDSSxVQUFVO0FBQ2QiLCJmaWxlIjoic3JjL2FwcC9kYXNoYm9hcmQvZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubS1jYXJkLWJvZHktc2l6ZSB7XHJcbiAgICBtaW4taGVpZ2h0OiAyMTBweDtcclxuICAgIG1heC1oZWlnaHQ6IDIxMHB4O1xyXG59XHJcblxyXG4uYm94OmhvdmVyIHtcclxuICAgIHRyYW5zaXRpb24tcHJvcGVydHk6IGJveC1zaGFkb3cgdHJhbnNmb3JtO1xyXG4gICAgdHJhbnNpdGlvbi1kdXJhdGlvbjogMC4zcztcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNSUpO1xyXG4gICAgYm94LXNoYWRvdzogMCA4cHggOHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcclxufVxyXG5cclxuLmVmZmVjdC1zaG93IHtcclxuICAgIG9wYWNpdHk6IDEgIWltcG9ydGFudDtcclxuICAgIHRyYW5zaXRpb246IG9wYWNpdHkgMC41IGVhc2UtaW4tb3V0O1xyXG4gICAgLW1vei10cmFuc2l0aW9uOiBvcGFjaXR5IDAuNXMgZWFzZS1pbi1vdXQ7XHJcbiAgICAtd2Via2l0LXRyYW5zaXRpb246IG9wYWNpdHkgMC41cyBlYXNlLWluLW91dDtcclxufVxyXG5cclxuLmVmZmVjdC1oaWRlIHtcclxuICAgIG9wYWNpdHk6IDA7XHJcbn0iXX0= */"
 
 /***/ }),
 
@@ -65339,83 +65339,77 @@ var DashboardComponent = /** @class */ (function () {
     function DashboardComponent(spinner) {
         this.spinner = spinner;
         this.pageAlredyWasOpened = sessionStorage.getItem('experienceWasOpened') === 'true';
-        this.experiances = [
-            {
-                title: "To.Do Hotel",
-                subtitle: "Sistema de governança hoteleira.",
-                content: "Atuação como lider técnico e desenvolvedor do produto. Criação / manutenção da aplicação móvel (android), back-end, banco de dados e front-end (Software Proprietário).",
-                imgUrl: "./assets/img/projects/todohotel.png",
-                link: "https://www.leucotron.com.br/todo-hotel",
-                personal: false,
-                maxWidth: "180px",
-            },
-            {
-                title: "Flux IP",
-                subtitle: "Central Telefônica PABX.",
-                content: "Atuação como desenvolvedor do produto. Criação / manutenção de aplicação back-end e de rotinas em shell script (Software Proprietário).",
-                imgUrl: "./assets/img/projects/flux.png",
-                link: "https://www.leucotron.com.br/pabx-flux-ip",
-                personal: false,
-                maxWidth: "200px"
-            },
-            {
-                title: "Ultra Rec",
-                subtitle: "Central Telefônica PABX.",
-                content: "Atuação como desenvolvedor do produto. Criação / manutenção do back-end, banco de dados e front-end (Software Proprietário).",
-                imgUrl: "./assets/img/projects/ultrarec.png",
-                link: "https://www.leucotron.com.br/",
-                personal: false,
-                maxWidth: "145px"
-            },
-            {
-                title: "GamerStory",
-                subtitle: "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
-                content: "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
-                imgUrl: "./assets/img/projects/control.png",
-                link: "https://play.google.com/store/apps/details?id=com.mesquita.augusto.mygamerscore",
-                personal: true,
-                maxWidth: "53px"
-            },
-            {
-                title: "Aventuras do Futebol",
-                subtitle: "RPG para Desktop (compatível com Windows) feito em C, inspirado na franquia Zelda do SNES.",
-                content: "Atuação como idealizador, desenvolvedor e designer do projeto (Projeto Pessoal / Open Source).",
-                imgUrl: "./assets/img/projects/soccer.png",
-                link: "https://github.com/Augustomesquita/aventuras-do-futebol",
-                personal: true,
-                maxWidth: "53px"
-            },
-            {
-                title: "Skinto",
-                subtitle: "Aplicação Web (Mobile First) para realização de pontuação de campeonato local do jogo League of Legends.",
-                content: "Atuação como idealizador, desenvolvedor e designer do projeto Projeto Pessoal / Open Source).",
-                imgUrl: "./assets/img/projects/skinto.png",
-                link: "https://github.com/Augustomesquita/skinto",
-                personal: true,
-                maxWidth: "53px"
-            }
-        ];
+        this.lazyCourses = null;
+        this.partnersCourses = null;
+        //   {
+        //     title: "Desenvolvedor de Aplicativos Android",
+        //     subtitle:
+        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
+        //     content:
+        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
+        //     imgUrl: "./assets/img/projects/control.png",
+        //     link:
+        //       "https://go.hotmart.com/J39291420G",
+        //     personal: false,
+        //     maxWidth: "53px"
+        //   },
+        //   {
+        //     title: "GamerStory",
+        //     subtitle:
+        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
+        //     content:
+        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
+        //     imgUrl: "./assets/img/projects/control.png",
+        //     link:
+        //       "https://play.google.com/store/apps/details?id=com.mesquita.augusto.mygamerscore",
+        //     personal: false,
+        //     maxWidth: "53px"
+        //   },
+        //   {
+        //     title: "GamerStory",
+        //     subtitle:
+        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
+        //     content:
+        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
+        //     imgUrl: "./assets/img/projects/control.png",
+        //     link:
+        //       "https://play.google.com/store/apps/details?id=com.mesquita.augusto.mygamerscore",
+        //     personal: false,
+        //     maxWidth: "53px"
+        //   },
+        // ];
     }
     DashboardComponent.prototype.ngOnInit = function () {
-        var _this = this;
         if (this.pageAlredyWasOpened) {
             this.showExperiencesWithDelay();
         }
         else {
-            this.spinner.show('sp1');
-            setTimeout(function () {
-                _this.spinner.hide('sp1');
-                _this.showExperiencesWithDelay();
-                sessionStorage.setItem('experienceWasOpened', 'true');
-            }, 2000);
+            this.showExperienicesWithDelayAndLoading();
         }
+    };
+    DashboardComponent.prototype.showExperienicesWithDelayAndLoading = function () {
+        var _this = this;
+        this.spinner.show('sp1');
+        setTimeout(function () {
+            _this.spinner.hide('sp1');
+            _this.showExperiencesWithDelay();
+            sessionStorage.setItem('experienceWasOpened', 'true');
+        }, 2000);
     };
     DashboardComponent.prototype.showExperiencesWithDelay = function () {
         var auxTime = 1;
-        this.experiances.forEach(function (experience) {
-            setTimeout(function () { return experience.showContent = true; }, auxTime * 800);
-            auxTime++;
-        });
+        if (this.partnersCourses) {
+            this.partnersCourses.forEach(function (experience) {
+                setTimeout(function () { return experience.showContent = true; }, auxTime * 100);
+                auxTime++;
+            });
+        }
+        if (this.lazyCourses) {
+            this.lazyCourses.forEach(function (experience) {
+                setTimeout(function () { return experience.showContent = true; }, auxTime * 100);
+                auxTime++;
+            });
+        }
     };
     DashboardComponent.prototype.customMaxWidth = function (experiance) {
         return {
@@ -65533,9 +65527,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var AdminLayoutRoutes = [
-    { path: "projects", component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__["DashboardComponent"] },
-    { path: "contact", component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_1__["UserProfileComponent"] },
-    { path: "knowledge-list", component: _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_2__["TableListComponent"] },
+    { path: "cursos", component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__["DashboardComponent"] },
+    { path: "sobre", component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_1__["UserProfileComponent"] },
+    { path: "oportunidades", component: _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_2__["TableListComponent"] },
     { path: "blog", component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"] },
 ];
 
@@ -65631,9 +65625,9 @@ var TableListComponent = /** @class */ (function () {
     TableListComponent.prototype.showSkillsWithDelay = function () {
         var _this = this;
         var i = 1;
-        setTimeout(function () { return _this.showProgramLanguageContent = true; }, i++ * 800);
-        setTimeout(function () { return _this.showToolContent = true; }, i++ * 800);
-        setTimeout(function () { return _this.showLanguageContent = true; }, i++ * 800);
+        setTimeout(function () { return _this.showProgramLanguageContent = true; }, i++ * 100);
+        setTimeout(function () { return _this.showToolContent = true; }, i++ * 100);
+        setTimeout(function () { return _this.showLanguageContent = true; }, i++ * 100);
         sessionStorage.setItem('skillsWasOpened', 'true');
     };
     TableListComponent = __decorate([
@@ -65658,7 +65652,7 @@ var TableListComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3VzZXItcHJvZmlsZS91c2VyLXByb2ZpbGUuY29tcG9uZW50LmNzcyJ9 */"
+module.exports = ".btn-danger:hover {\r\n    transition-property: -webkit-transform;\r\n    transition-property: transform;\r\n    transition-property: transform, -webkit-transform;\r\n    transition-duration: 0.3s;\r\n    -webkit-transform: translateY(-10%);\r\n            transform: translateY(-10%);\r\n}\r\n\r\n.text-red {\r\n    color: rgb(196, 84, 84);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvdXNlci1wcm9maWxlL3VzZXItcHJvZmlsZS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksc0NBQThCO0lBQTlCLDhCQUE4QjtJQUE5QixpREFBOEI7SUFDOUIseUJBQXlCO0lBQ3pCLG1DQUEyQjtZQUEzQiwyQkFBMkI7QUFDL0I7O0FBRUE7SUFDSSx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC91c2VyLXByb2ZpbGUvdXNlci1wcm9maWxlLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRhbmdlcjpob3ZlciB7XHJcbiAgICB0cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XHJcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0xMCUpO1xyXG59XHJcblxyXG4udGV4dC1yZWQge1xyXG4gICAgY29sb3I6IHJnYigxOTYsIDg0LCA4NCk7XHJcbn0iXX0= */"
 
 /***/ }),
 
