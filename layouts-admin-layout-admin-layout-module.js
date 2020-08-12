@@ -64844,7 +64844,7 @@ var DashboardComponent = /** @class */ (function () {
         this.partnersCourses = [{
                 title: "Curso De Informática Empresarial",
                 subtitle: "CURSO COM CERTIFICADO DIGITAL",
-                content: "Aprenda os principais tópicos: hardware, windows, word, excel (básico e avançado), powerpoint, linux, office, especialidade digital, oratória com PNL, tudo em único curso!",
+                content: "Aprenda os principais tópicos como: hardware, windows, word, excel (básico e avançado), powerpoint, linux, office, tudo em único curso!",
                 imgUrl: "./assets/img/courses/informatica.png",
                 link: "https://go.hotmart.com/S39778135R",
                 personal: false,
