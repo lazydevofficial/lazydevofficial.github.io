@@ -559,7 +559,7 @@ var __metadata = (undefined && undefined.__metadata) || function (k, v) {
 };
 
 var ROUTES = [
-    { path: '/cursos', title: 'Cursos', icon: 'school', class: '' },
+    { path: '/cursos', title: 'Conhecimento', icon: 'school', class: '' },
     { path: '/blog', title: 'Artigos', icon: 'import_contacts', class: '' },
     { path: '/oportunidades', title: 'Oportunidades', icon: 'business_center', class: '' },
     { path: '/sobre', title: "Sobre", icon: 'insert_emoticon', class: '' },

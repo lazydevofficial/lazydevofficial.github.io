@@ -64679,7 +64679,7 @@ module.exports = "<div class=\"main-content animated fadeIn\">\r\n  <div class=\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"main-content animated fadeIn\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12 text-center\" *ngIf=\"!partnersCourses && !lazyCourses\">\r\n                    <div class=\"card\">\r\n                        <div class=\"card-header card-header-warning\">\r\n                            <h4 class=\"card-title \">Nenhum curso disponível no momento</h4>\r\n                        </div>\r\n                        <div class=\"card-body\">\r\n                            \r\n                        </div>\r\n                </div>\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"lazyCourses\" >\r\n                    <h2>Cursos LazyDev</h2>\r\n                </div>\r\n\r\n                <div class=\"col-lg-4 col-md-6 col-sm-6\" *ngFor=\"let course of lazyCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"partnersCourses\">\r\n                    <h2>Cursos de Parceiros</h2>\r\n                </div>\r\n                \r\n                <div class=\"col-lg-4 col-md-6 col-sm-6\" *ngFor=\"let course of partnersCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n        \r\n        </div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"main-content animated fadeIn\">\r\n    <div class=\"container-fluid\">\r\n        <div class=\"row\">\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12 text-center\" *ngIf=\"!partnersCourses && !lazyCourses\">\r\n                    <div class=\"card\">\r\n                        <div class=\"card-header card-header-warning\">\r\n                            <h4 class=\"card-title \">Nenhum curso disponível no momento</h4>\r\n                        </div>\r\n                        <div class=\"card-body\">\r\n                            \r\n                        </div>\r\n                </div>\r\n                </div>\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"lazyCourses\" >\r\n                    <h2>Material LazyDev</h2>\r\n                </div>\r\n\r\n                <div class=\"col-lg-4 col-md-6 col-sm-6\" *ngFor=\"let course of lazyCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n\r\n\r\n                <div class=\"col-lg-12 col-md-12 col-sm-12\" *ngIf=\"partnersCourses\">\r\n                    <h2>Material de Parceiros</h2>\r\n                </div>\r\n                \r\n                <div class=\"col-lg-4 col-md-6 col-sm-6\" *ngFor=\"let course of partnersCourses\">\r\n                    <a href=\"{{course.link}}\" target=\"_blank\">\r\n                        <div class=\"card card-stats box\">\r\n                            <div class=\"card-header text-center\" [ngClass]=\"customHeaderClass(course)\" >\r\n                                <img class=\"img\" src=\"{{course.imgUrl}}\" [ngStyle]=\"customMaxWidth(course)\" />\r\n                            </div>\r\n                            <div class=\"card-body m-card-body-size text-center\">\r\n                                <h4 class=\"card-title\"><b>{{course.title}}</b></h4>\r\n                                <div class=\"card-category\">\r\n                                    <div><b>{{course.subtitle}}</b></div>\r\n                                    <div class=\"m-margin-top\">{{course.content}}</div>\r\n                                </div>\r\n                            </div>\r\n                        </div>\r\n                    </a>\r\n                </div>\r\n        \r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -64841,44 +64841,16 @@ var DashboardComponent = /** @class */ (function () {
     function DashboardComponent() {
         this.pageAlredyWasOpened = sessionStorage.getItem('experienceWasOpened') === 'true';
         this.lazyCourses = null;
-        this.partnersCourses = null;
-        //   {
-        //     title: "Desenvolvedor de Aplicativos Android",
-        //     subtitle:
-        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
-        //     content:
-        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
-        //     imgUrl: "./assets/img/projects/control.png",
-        //     link:
-        //       "https://go.hotmart.com/J39291420G",
-        //     personal: false,
-        //     maxWidth: "53px"
-        //   },
-        //   {
-        //     title: "GamerStory",
-        //     subtitle:
-        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
-        //     content:
-        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
-        //     imgUrl: "./assets/img/projects/control.png",
-        //     link:
-        //       "https://play.google.com/store/apps/details?id=com.mesquita.augusto.mygamerscore",
-        //     personal: false,
-        //     maxWidth: "53px"
-        //   },
-        //   {
-        //     title: "GamerStory",
-        //     subtitle:
-        //       "Aplicativo Android (usando Kotlin) para armazenamento dos jogos que você já finalizou com sistema de pontuação.",
-        //     content:
-        //       "Atuação como idealizador, desenvolvedor e designer (Projeto Pessoal).",
-        //     imgUrl: "./assets/img/projects/control.png",
-        //     link:
-        //       "https://play.google.com/store/apps/details?id=com.mesquita.augusto.mygamerscore",
-        //     personal: false,
-        //     maxWidth: "53px"
-        //   },
-        // ];
+        this.partnersCourses = [{
+                title: "Curso De Informática Empresarial",
+                subtitle: "CURSO COM CERTIFICADO DIGITAL",
+                content: "Aprenda os principais tópicos: hardware, windows, word, excel (básico e avançado), powerpoint, linux, office, especialidade digital, oratória com PNL, tudo em único curso!",
+                imgUrl: "./assets/img/courses/informatica.png",
+                link: "https://go.hotmart.com/S39778135R",
+                personal: false,
+                maxWidth: "53px"
+            },
+        ];
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
