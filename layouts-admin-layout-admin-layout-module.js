@@ -64683,6 +64683,17 @@ module.exports = "<div class=\"main-content animated fadeIn\">\r\n    <div class
 
 /***/ }),
 
+/***/ "./node_modules/raw-loader/index.js!./src/app/parceiros/parceiros.component.html":
+/*!******************************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/parceiros/parceiros.component.html ***!
+  \******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"main-content animated fadeIn\">\r\n  <div class=\"container-fluid\">\r\n    <div class=\"row\">\r\n      <div class=\"col-md-12\">\r\n        <div class=\"card card-profile\">\r\n          <div class=\"card-avatar\">\r\n            <a href=\"javascript:void(0)\">\r\n              <img class=\"img\" src=\"./assets/img/courses/informatica.png\" />\r\n            </a>\r\n          </div>\r\n          <div class=\"card-body\">\r\n            <h6 class=\"card-category text-red\">\r\n              <b>Páginas Parceiras</b>\r\n            </h6>\r\n            <h4 class=\"card-title text-red\"><b>DevUnidos</b></h4>\r\n            <a href=\"https://instagram.com/lazydevofficial/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>LazyDev</b></a>\r\n            <a href=\"https://instagram.com/dicasdodev/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>Dicas do Dev</b></a>\r\n            <a href=\"https://instagram.com/spacecode_/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>Space Code</b></a>\r\n            <a href=\"https://instagram.com/dev_fullstack_/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>Desenvolvedor Full-Stack</b></a>\r\n            <a href=\"https://instagram.com/eprogramar/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>e-Programar</b></a>\r\n            <a href=\"https://instagram.com/dev_4.0/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>Dev4.0</b></a>\r\n            <a href=\"https://instagram.com/devweb_study/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>Programador Web Frontend</b></a>\r\n            <a href=\"https://instagram.com/dicasparadevs/\" target=\"_blank\" class=\"btn btn-danger btn-fill btn-round\" title=\"Linkedin\"><b>dicasparadevs</b></a>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+
+/***/ }),
+
 /***/ "./node_modules/raw-loader/index.js!./src/app/table-list/table-list.component.html":
 /*!********************************************************************************!*\
   !*** ./node_modules/raw-loader!./src/app/table-list/table-list.component.html ***!
@@ -64915,14 +64926,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _admin_layout_routing__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./admin-layout.routing */ "./src/app/layouts/admin-layout/admin-layout.routing.ts");
 /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
-/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../table-list/table-list.component */ "./src/app/table-list/table-list.component.ts");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _parceiros_parceiros_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../parceiros/parceiros.component */ "./src/app/parceiros/parceiros.component.ts");
+/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../table-list/table-list.component */ "./src/app/table-list/table-list.component.ts");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -64945,18 +64958,19 @@ var AdminLayoutModule = /** @class */ (function () {
                 _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterModule"].forChild(_admin_layout_routing__WEBPACK_IMPORTED_MODULE_6__["AdminLayoutRoutes"]),
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormsModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_4__["ReactiveFormsModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatButtonModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatRippleModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatFormFieldModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatInputModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatSelectModule"],
-                _angular_material__WEBPACK_IMPORTED_MODULE_10__["MatTooltipModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatButtonModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatRippleModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatFormFieldModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatInputModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatSelectModule"],
+                _angular_material__WEBPACK_IMPORTED_MODULE_11__["MatTooltipModule"],
             ],
             declarations: [
                 _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_7__["DashboardComponent"],
                 _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_8__["UserProfileComponent"],
-                _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_9__["TableListComponent"],
-                _blog_blog_component__WEBPACK_IMPORTED_MODULE_0__["BlogComponent"]
+                _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_10__["TableListComponent"],
+                _blog_blog_component__WEBPACK_IMPORTED_MODULE_0__["BlogComponent"],
+                _parceiros_parceiros_component__WEBPACK_IMPORTED_MODULE_9__["ParceirosComponent"]
             ]
         })
     ], AdminLayoutModule);
@@ -64979,8 +64993,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminLayoutRoutes", function() { return AdminLayoutRoutes; });
 /* harmony import */ var _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../dashboard/dashboard.component */ "./src/app/dashboard/dashboard.component.ts");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
-/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../table-list/table-list.component */ "./src/app/table-list/table-list.component.ts");
-/* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../blog/blog.component */ "./src/app/blog/blog.component.ts");
+/* harmony import */ var _parceiros_parceiros_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../parceiros/parceiros.component */ "./src/app/parceiros/parceiros.component.ts");
+/* harmony import */ var _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../table-list/table-list.component */ "./src/app/table-list/table-list.component.ts");
+/* harmony import */ var _blog_blog_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../blog/blog.component */ "./src/app/blog/blog.component.ts");
+
 
 
 
@@ -64988,9 +65004,63 @@ __webpack_require__.r(__webpack_exports__);
 var AdminLayoutRoutes = [
     { path: "cursos", component: _dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_0__["DashboardComponent"] },
     { path: "sobre", component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_1__["UserProfileComponent"] },
-    { path: "oportunidades", component: _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_2__["TableListComponent"] },
-    { path: "blog", component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_3__["BlogComponent"] },
+    { path: "oportunidades", component: _table_list_table_list_component__WEBPACK_IMPORTED_MODULE_3__["TableListComponent"] },
+    { path: "blog", component: _blog_blog_component__WEBPACK_IMPORTED_MODULE_4__["BlogComponent"] },
+    { path: "parceiros", component: _parceiros_parceiros_component__WEBPACK_IMPORTED_MODULE_2__["ParceirosComponent"] }
 ];
+
+
+/***/ }),
+
+/***/ "./src/app/parceiros/parceiros.component.css":
+/*!***************************************************!*\
+  !*** ./src/app/parceiros/parceiros.component.css ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ".btn-danger:hover {\r\n    transition-property: -webkit-transform;\r\n    transition-property: transform;\r\n    transition-property: transform, -webkit-transform;\r\n    transition-duration: 0.3s;\r\n    -webkit-transform: translateY(-10%);\r\n            transform: translateY(-10%);\r\n}\r\n\r\n.text-red {\r\n    color: rgb(196, 84, 84);\r\n}\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvcGFyY2Vpcm9zL3BhcmNlaXJvcy5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0lBQ0ksc0NBQThCO0lBQTlCLDhCQUE4QjtJQUE5QixpREFBOEI7SUFDOUIseUJBQXlCO0lBQ3pCLG1DQUEyQjtZQUEzQiwyQkFBMkI7QUFDL0I7O0FBRUE7SUFDSSx1QkFBdUI7QUFDM0IiLCJmaWxlIjoic3JjL2FwcC9wYXJjZWlyb3MvcGFyY2Vpcm9zLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuYnRuLWRhbmdlcjpob3ZlciB7XHJcbiAgICB0cmFuc2l0aW9uLXByb3BlcnR5OiB0cmFuc2Zvcm07XHJcbiAgICB0cmFuc2l0aW9uLWR1cmF0aW9uOiAwLjNzO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC0xMCUpO1xyXG59XHJcblxyXG4udGV4dC1yZWQge1xyXG4gICAgY29sb3I6IHJnYigxOTYsIDg0LCA4NCk7XHJcbn0iXX0= */"
+
+/***/ }),
+
+/***/ "./src/app/parceiros/parceiros.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/parceiros/parceiros.component.ts ***!
+  \**************************************************/
+/*! exports provided: ParceirosComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ParceirosComponent", function() { return ParceirosComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// declare var $: any;
+var ParceirosComponent = /** @class */ (function () {
+    function ParceirosComponent() {
+    }
+    ParceirosComponent.prototype.ngOnInit = function () {
+    };
+    ParceirosComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: "app-parceiros",
+            template: __webpack_require__(/*! raw-loader!./parceiros.component.html */ "./node_modules/raw-loader/index.js!./src/app/parceiros/parceiros.component.html"),
+            styles: [__webpack_require__(/*! ./parceiros.component.css */ "./src/app/parceiros/parceiros.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], ParceirosComponent);
+    return ParceirosComponent;
+}());
+
 
 
 /***/ }),
