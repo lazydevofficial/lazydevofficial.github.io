@@ -64856,7 +64856,7 @@ var DashboardComponent = /** @class */ (function () {
                 subtitle: "💻 Curso com Certificado Digital",
                 content: "Durante as aulas você vai entender os principais e mais utilizados recursos da plataforma e de quebra ainda vai construir uma aplicação serverless totalmente do ZERO! ☁️😍",
                 imgUrl: "./assets/img/courses/aws.png",
-                link: "https://www.udemy.com/course/introducao-aws/?couponCode=511829C6DC1F566CB96D",
+                link: "https://www.udemy.com/course/introducao-aws/?couponCode=BB7528F462A764850F3A",
                 personal: false,
                 maxWidth: "200px"
             }];
