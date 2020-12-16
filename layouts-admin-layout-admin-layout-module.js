@@ -64859,27 +64859,16 @@ var DashboardComponent = /** @class */ (function () {
                 link: "https://www.udemy.com/course/introducao-aws/?couponCode=AB6A9F845F9FC44B2216",
                 personal: false,
                 maxWidth: "200px"
-            }];
-        this.partnersCourses = [
-            {
-                title: "Python de A a Z (E-Book)",
-                subtitle: "Guia de Primeiros passos com a linguagem",
-                content: "Um guia completo sobre uma das linguagens de programação mais utilizadas no mercado de trabalho atualmente!",
-                imgUrl: "./assets/img/courses/python.png",
-                link: "https://go.hotmart.com/W39432992F",
-                personal: false,
-                maxWidth: "53px"
             },
             {
-                title: "Game Design (E-Book)",
-                subtitle: "Introdução a Criação de Games",
-                content: "Você aprenderá a gerenciar um projeto de jogo, tomara conhecimento de softwares e materiais de estudo e fará exercícios práticos sobre Design de Jogos!",
-                imgUrl: "./assets/img/courses/control.png",
-                link: "https://go.hotmart.com/W39433023F",
+                title: "Hacking com Python",
+                subtitle: "💻 Automatizando processos com Python através do reconhecimento de imagens",
+                content: "Durante as aulas você vai aprender a identificar imagens utilizando blibliotecas do python que permitem a realização de automatização de diversos processos em qualquer sistema (jogos, instagram, etc) sua imaginação é o limite! 😍",
+                imgUrl: "./assets/img/courses/python.png",
+                link: "https://www.udemy.com/course/identificacao-de-imagens-com-python-automatizando-processos/?referralCode=0A4F0684A04DAD6CB15C",
                 personal: false,
-                maxWidth: "53px"
-            }
-        ];
+                maxWidth: "200px"
+            }];
     }
     DashboardComponent.prototype.ngOnInit = function () {
     };
