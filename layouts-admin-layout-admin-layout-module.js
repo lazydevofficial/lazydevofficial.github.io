@@ -64856,16 +64856,16 @@ var DashboardComponent = /** @class */ (function () {
                 subtitle: "Curso com Certificado Digital",
                 content: "Durante as aulas você vai entender os principais e mais utilizados recursos da plataforma e de quebra ainda vai construir uma aplicação serverless totalmente do ZERO! ☁️😍",
                 imgUrl: "./assets/img/courses/aws.png",
-                link: "https://www.udemy.com/course/introducao-aws/?couponCode=AB6A9F845F9FC44B2216",
+                link: "https://www.udemy.com/course/introducao-aws/?referralCode=065B3BE466C8131566CC",
                 personal: false,
                 maxWidth: "200px"
             },
             {
-                title: "Hacking com Python",
+                title: "Hacking Ético com Python",
                 subtitle: "Automatizando Processos com Reconhecimento de Imagens",
                 content: "Durante as aulas você vai aprender a identificar imagens com python que permitindo a automatização de diversos processos em qualquer sistema (jogos, instagram, etc) sua imaginação é o limite! 😍",
                 imgUrl: "./assets/img/courses/python.png",
-                link: "https://www.udemy.com/course/identificacao-de-imagens-com-python-automatizando-processos/?referralCode=0A4F0684A04DAD6CB15C",
+                link: "https://www.udemy.com/course/hackeando-com-reconhecimento-de-imagens/?referralCode=CA77B9B8FB3EA426DAE9",
                 personal: false,
                 maxWidth: "200px"
             }];
