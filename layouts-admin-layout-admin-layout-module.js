@@ -64861,9 +64861,18 @@ var DashboardComponent = /** @class */ (function () {
                 maxWidth: "200px"
             },
             {
+                title: "Identificação de Imagens com Python",
+                subtitle: "Automatizando Processos",
+                content: "Durante as aulas você vai aprender a identificar imagens usando Python, permitindo a automatização de diversos processos em qualquer sistema.",
+                imgUrl: "./assets/img/courses/python.png",
+                link: "https://www.udemy.com/course/identificacao-de-imagens-com-python-automatizando-processos/?referralCode=0A4F0684A04DAD6CB15C",
+                personal: false,
+                maxWidth: "200px"
+            },
+            {
                 title: "Hacking Ético com Python",
                 subtitle: "Automatizando Processos com Reconhecimento de Imagens",
-                content: "Durante as aulas você vai aprender a identificar imagens com python que permitindo a automatização de diversos processos em qualquer sistema (jogos, instagram, etc) sua imaginação é o limite! 😍",
+                content: "Durante as aulas você vai aprender a fazer hacking ético através da detecção de imagens usando Python. Sua imaginação é o limite! 😍",
                 imgUrl: "./assets/img/courses/python.png",
                 link: "https://www.udemy.com/course/hackeando-com-reconhecimento-de-imagens/?referralCode=CA77B9B8FB3EA426DAE9",
                 personal: false,
